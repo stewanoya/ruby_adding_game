@@ -1,6 +1,12 @@
 require './player'
 require './question'
+require './turn'
 
-new_players = Players.new("stew", "kelsey")
-puts new_players.player1
-puts new_players.player2
+game1 = Players.new("stew", "kelsey")
+
+new_game = Turn.new(game1)
+
+new_game.askQuestion
+new_game.next_turn
+new_game.askQuestion
+new_game.next_turn
