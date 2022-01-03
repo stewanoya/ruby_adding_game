@@ -1,3 +1,6 @@
+#write out how the game works, any nouns become classes and any adjectives become methods FIRST
+#
+
 #------classes
 # Player
 ## Role - will answer questions in prompt
