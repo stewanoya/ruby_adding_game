@@ -2,11 +2,20 @@ require './player'
 require './question'
 require './turn'
 
-game1 = Players.new("stew", "kelsey")
+print "Player1, please enter your name: "
+player1 = gets.chomp
 
-new_game = Turn.new(game1)
+print "Player2, please enter your name: "
+player2 = gets.chomp
 
-new_game.askQuestion
-new_game.next_turn
-new_game.askQuestion
-new_game.next_turn
+players = Players.new(player1, player2)
+
+
+
+new_game = Turn.new(players)
+
+while !new_game.gameover?
+
+  new_game.next_turn
+
+end

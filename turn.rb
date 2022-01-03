@@ -4,7 +4,8 @@ class Turn
     @game = game
     @players = [game.player1, game.player2]
     @Turn_number = 0
-    puts "Welcome to a new Game! In this corner #{@game.player1[:name]}, and in this corner #{@game.player2[:name]}"
+    puts "Welcome to a new Game! In this corner we have => #{@game.player1[:name]} and in this corner we have => #{@game.player2[:name]}!!!!"
+    sleep 2
   end
 
   def next_turn
