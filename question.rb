@@ -1,15 +1,18 @@
 class Question
 
+  attr_accessor :first_num, :second_num
+
   def initialize
   @first_num = rand(1..20)
   @second_num = rand(1..20)
   end
 
   def question_string
-    print "What is #{@first_num} + #{@second_num} equal to?"
+    puts "What is #{@first_num} + #{@second_num} equal to?"
   end
 
   def answer
+    print "Answer:"
     @player_answer = gets.chomp
   end
 
